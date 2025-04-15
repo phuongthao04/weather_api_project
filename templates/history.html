@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Lịch sử tra cứu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h2 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        .scrollable-list {
+            max-height: 300px; /* Chiều cao tối đa, bạn có thể thay đổi nếu muốn */
+            overflow-y: auto;
+            padding-right: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            background: #f2f2f2;
+            margin-bottom: 12px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background 0.3s;
+            text-align: center;
+        }
+
+        a:hover {
+            background-color: #357ab8;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 20px;
+            }
+
+            li {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            a {
+                width: 100%;
+            }
+
+            .scrollable-list {
+                max-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Lịch sử tra cứu</h2>
+        <input type="text" id="searchInput" placeholder="Tìm thành phố...">
+
+        <div class="scrollable-list">
+            <ul id="historyList">
+                <!-- Lặp qua danh sách lịch sử (render từ Flask template) -->
+                {% for row in history %}
+                    <!-- Mỗi dòng hiển thị: Tên thành phố (row[4]), thời gian (row[1]), nhiệt độ (row[2]), mô tả (row[3]) -->
+                    <li><strong>{{ row[4] }}</strong> - {{ row[1] }} - {{ row[2] }}°C - {{ row[3] }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <a href="/">← Quay lại trang chính</a>
+    </div>
+
+    <!-- Script xử lý lọc danh sách khi nhập vào ô tìm kiếm -->
+    <script>
+        // Lấy các phần tử DOM cần dùng
+        const input = document.getElementById("searchInput"); // Ô tìm kiếm
+        const list = document.getElementById("historyList"); // Danh sách UL
+        const items = list.getElementsByTagName("li"); // Tất cả các mục trong danh sách
+
+        // Gán sự kiện khi người dùng gõ vào ô tìm kiếm
+        input.addEventListener("keyup", function () {
+            const filter = input.value.toLowerCase(); // Lấy giá trị nhập và chuyển thành chữ thường
+            for (let i = 0; i < items.length; i++) {
+                const cityText = items[i].textContent || items[i].innerText; // Lấy nội dung của từng dòng
+                // Nếu nội dung có chứa chuỗi nhập vào thì hiển thị, ngược lại ẩn đi
+                if (cityText.toLowerCase().includes(filter)) {
+                    items[i].style.display = ""; // Hiện ra
+                } else {
+                    items[i].style.display = "none"; // Ẩn đi
+                }
+            }
+        });
+    </script>
+</body>
+</html>

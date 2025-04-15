@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kết quả thời tiết</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            transition: background 0.5s, color 0.5s;
+        }
+
+        .main {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1000px;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 20px 30px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+            backdrop-filter: blur(8px);
+            min-width: 280px;
+            flex: 1;
+        }
+
+        .weather-icon {
+            width: 100px;
+            height: 100px;
+        }
+
+        .advice {
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .forecast-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+
+        .forecast-card {
+            background: rgba(255,255,255,0.15);
+            border-radius: 12px;
+            padding: 10px;
+            margin: 10px;
+            min-width: 120px;
+            width: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        .forecast-card p {
+            margin: 4px 0;
+            font-size: 14px;
+        }
+
+        .forecast-icon {
+            width: 60px;
+            height: 60px;
+        }
+
+        .rain-bg {
+            background: linear-gradient(to bottom, #3a3a3a, #2c3e50);
+        }
+
+        .sunny-bg {
+            background: linear-gradient(to bottom, #f9d423, #ff4e50);
+        }
+
+        .cloudy-bg {
+            background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+        }
+
+        .storm-bg {
+            background: linear-gradient(to bottom, #3e3e3e, #1e1e1e);
+        }
+
+        .snow-bg {
+            background: linear-gradient(to bottom, #e6f0f8, #aacfd0);
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .weather-icon {
+                width: 80px;
+                height: 80px;
+            }
+            .forecast-icon {
+                width: 50px;
+                height: 50px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            .advice {
+                font-size: 14px;
+            }
+        }
+
+        .rain-effect::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-image: url('https://i.imgur.com/NM4iYxl.gif');
+            background-size: cover;
+            opacity: 0.2;
+            z-index: 0;
+        }
+
+        .day-theme {
+            background: linear-gradient(to bottom, #fefcea, #f1da36);
+        }
+
+        .night-theme {
+            background: linear-gradient(to bottom, #1e1e2f, #0b0b1a);
+        }
+
+        .light-text {
+            color: #000 !important;
+        }
+
+        .dark-text {
+            color: #fff !important;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.2);
+            color: #fff;
+            border: none;
+            padding: 10px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        .favorite-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .favorite-btn:hover {
+            transform: scale(1.1);
+        }
+        #favorite-list li {
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #ccc;
+            cursor: grab;
+            border-radius: 8px;
+            transition: background-color 0.2s;
+        }
+        #favorite-list li:hover {
+            background-color: rgba(200, 200, 255, 0.2);
+        }
+        #favorite-list li.dragging {
+            opacity: 0.5;
+        }
+        .favorite1-list{
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        @keyframes pop {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.4); }
+            100% { transform: scale(1); }
+        }
+        .favorite-btn span.pop {
+            animation: pop 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- Thông tin thời tiết hiện tại -->
+        <div class="container">
+            <h1>
+                Thời tiết tại {{ city }}
+                <button class="favorite-btn" onclick="toggleFavorite()">
+                    <span id="fav-icon">🤍</span>
+                </button>
+            </h1>
+            <img class="weather-icon" src="http://openweathermap.org/img/wn/{{ icon }}@2x.png" alt="weather icon">
+
+            <p>Nhiệt độ: {{ temp }}°C</p>
+            <p>Trạng thái: {{ desc_en if lang == 'en' else desc }}</p>
+
+            <div style="margin-top: 20px;">
+                <a href="/" style="color: inherit; text-decoration: underline; margin-right: 20px;">← Quay lại</a>
+                <a href="/history" style="color: inherit; text-decoration: underline;">📜 Lịch sử tra cứu</a>
+            </div>
+        </div>
+
+        <!-- Dự báo 3 ngày -->
+        <div class="container">
+            <h2>Dự báo 3 ngày tới</h2>
+            <div class="forecast-group">
+                {% for day in forecast %}
+                <div class="forecast-card">
+                    <p><strong>{{ day.date }}</strong></p>
+                    <img class="forecast-icon" src="http://openweathermap.org/img/wn/{{ day.icon }}@2x.png" alt="icon">
+                    <p>{{ day.temp }}°C</p>
+                    <p style="font-size: 13px;">{{ day.desc }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Biểu đồ nhiệt độ trong ngày -->
+        <div class="container">
+            <h2>Biểu đồ nhiệt độ trong ngày</h2>
+            <canvas id="tempChart" width="400" height="200"></canvas>
+        </div>
+
+        <!-- Danh sách các thành phố yêu thích -->
+        <div class="container">
+            <h2>Thành phố yêu thích</h2>
+            <div class="favorite1-list">
+                <ul id="favorite-list" style="list-style: none; padding: 0;"></ul>
+                <p id="message" style="color: green; margin-top: 10px;"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nút chuyển theme ngày/đêm -->
+    <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+
+    <!-- Thư viện Chart.js vẽ biểu đồ -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Tạo biểu đồ nhiệt độ trong ngày
+        const ctx = document.getElementById('tempChart').getContext('2d');
+
+        function getLabelColor() {
+            // Chọn màu chữ dựa vào theme hiện tại
+            return document.body.classList.contains('day-theme') ? '#000' : '#fff';
+        }
+
+        // Cấu hình biểu đồ Chart.js
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: {{ hourly|map(attribute='time')|list|tojson }},
+                datasets: [{
+                    label: 'Nhiệt độ (°C)',
+                    data: {{ hourly|map(attribute='temp')|list|tojson }},
+                    borderColor: '#f9ca24',
+                    backgroundColor: 'rgba(249,202,36,0.2)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: getLabelColor()
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            color: getLabelColor()
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            color: getLabelColor()
+                        },
+                        beginAtZero: false
+                    }
+                }
+            }
+        });
+
+        // Cập nhật màu biểu đồ khi đổi theme
+        function updateChartColors() {
+            const color = getLabelColor();
+            chart.options.plugins.legend.labels.color = color;
+            chart.options.scales.x.ticks.color = color;
+            chart.options.scales.y.ticks.color = color;
+            chart.update();
+        }
+
+        // Chuyển theme giữa ngày và đêm
+        function toggleTheme() {
+            const body = document.body;
+            if (body.classList.contains("day-theme")) {
+                setTheme("dark");
+            } else {
+                setTheme("light");
+            }
+            updateChartColors();
+        }
+
+        // Áp dụng class tương ứng với theme
+        function setTheme(mode) {
+            const body = document.body;
+            body.classList.remove("day-theme", "night-theme", "light-text", "dark-text");
+            if (mode === "light") {
+                body.classList.add("day-theme", "light-text");
+            } else {
+                body.classList.add("night-theme", "dark-text");
+            }
+        }
+
+        // Thêm hoặc xóa thành phố khỏi danh sách yêu thích
+        function toggleFavorite() {
+            const cityName = "{{ city }}";
+            const favIcon = document.getElementById('fav-icon');
+            let favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+
+            if (favorites.some(c => c.toLowerCase() === cityName.toLowerCase())) {
+                // Nếu đã có -> xóa
+                favorites = favorites.filter(c => c.toLowerCase() !== cityName.toLowerCase());
+                favIcon.textContent = "🤍";
+            } else {
+                // Nếu chưa có -> thêm
+                favorites.push(cityName);
+                favIcon.textContent = "❤️";
+                favIcon.classList.add("pop");
+                setTimeout(() => favIcon.classList.remove("pop"), 300);
+            }
+
+            localStorage.setItem("favorites", JSON.stringify(favorites));
+            renderFavorites();
+        }
+
+        // Hiển thị danh sách các thành phố yêu thích
+        function renderFavorites() {
+            const list = document.getElementById('favorite-list');
+            const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+            list.innerHTML = "";
+
+            if (favorites.length === 0) {
+                const emptyMsg = document.createElement("li");
+                emptyMsg.textContent = "Chưa có thành phố yêu thích nào.";
+                emptyMsg.style.color = "gray";
+                list.appendChild(emptyMsg);
+                return;
+            }
+
+            favorites.forEach(city => {
+                const li = document.createElement("li");
+                li.textContent = city;
+                li.style.cursor = "pointer";
+
+                // Khi click, hiện nút xóa
+                li.onclick = (e) => {
+                    e.stopPropagation();
+                    document.querySelectorAll('.remove-btn').forEach(btn => btn.remove());
+
+                    if (!li.querySelector('.remove-btn')) {
+                        const removeBtn = document.createElement("button");
+                        removeBtn.textContent = "❌";
+                        removeBtn.className = "remove-btn";
+                        removeBtn.style.marginLeft = "10px";
+
+                        removeBtn.onclick = (ev) => {
+                            ev.stopPropagation();
+                            removeFavorite(city);
+                        };
+
+                        li.appendChild(removeBtn);
+                    }
+                };
+
+                // Hỗ trợ kéo thả thay đổi thứ tự
+                li.draggable = true;
+                li.ondragstart = () => li.classList.add("dragging");
+                li.ondragend = () => {
+                    li.classList.remove("dragging");
+                    saveFavoriteOrder();
+                };
+
+                list.appendChild(li);
+            });
+
+            // Xử lý khi kéo thành phố đến vị trí khác
+            list.ondragover = e => {
+                e.preventDefault();
+                const dragging = document.querySelector(".dragging");
+                const afterElement = [...list.children].find(child => {
+                    return e.clientY < child.getBoundingClientRect().top + child.offsetHeight / 2;
+                });
+                if (afterElement) {
+                    list.insertBefore(dragging, afterElement);
+                } else {
+                    list.appendChild(dragging);
+                }
+            };
+        }
+
+        // Lưu lại thứ tự mới sau khi kéo
+        function saveFavoriteOrder() {
+            const list = document.querySelectorAll('#favorite-list li');
+            const ordered = Array.from(list).map(li => li.textContent.trim().split("❌")[0]);
+            localStorage.setItem("favorites", JSON.stringify(ordered));
+        }
+
+        // Xóa thành phố khỏi danh sách yêu thích
+        function removeFavorite(city) {
+            let favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+            favorites = favorites.filter(c => c.toLowerCase() !== city.toLowerCase());
+            localStorage.setItem("favorites", JSON.stringify(favorites));
+            renderFavorites();
+
+            // Cập nhật icon nếu đang hiển thị thành phố đó
+            if (city.toLowerCase() === "{{ city }}".toLowerCase()) {
+                document.getElementById('fav-icon').textContent = "🤍";
+            }
+        }
+        function showMessage(msg) {
+            const message = document.getElementById("message");
+            message.textContent = msg;
+            setTimeout(() => message.textContent = "", 2500);
+        }
+
+        // Khi trang tải xong
+        window.onload = () => {
+            const hours = new Date().getHours();
+            // Chọn theme phù hợp giờ trong ngày
+            if (hours > 6 && hours < 18) {
+                setTheme("light");
+            } else {
+                setTheme("dark");
+            }
+
+            // Hiển thị danh sách yêu thích
+            renderFavorites();
+
+            if (JSON.parse(localStorage.getItem("favorites") || "[]").some(c => c.toLowerCase() === "{{ city }}".toLowerCase())) {
+                document.getElementById('fav-icon').textContent = "❤️";
+            }
+        };
+    </script>
+</body>
+</html>
+

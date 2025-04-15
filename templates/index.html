@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Tra cứu thời tiết</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            color: #333;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            width: 90%;
+            max-width: 420px;
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 24px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 16px;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus {
+            border-color: #66a6ff;
+            outline: none;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            background-color: #66a6ff;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #4f88d3;
+        }
+        .footer-links {
+            margin-top: 25px;
+            font-size: 14px;
+        }
+        .footer-links a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 500px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            button {
+                font-size: 15px;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Dự báo thời tiết</h1>
+
+        <!-- Form gửi yêu cầu đến server -->
+        <form action="/weather" method="post" onsubmit="return setCityId()">
+            <input id="searchBox" type="text" placeholder="Nhập tên thành phố..." autocomplete="off">
+            <!-- Trường ẩn chứa city_id khi submit -->
+            <input type="hidden" name="city_id" id="city_id">
+            <button type="submit">Xem thời tiết</button>
+        </form>
+
+        <div class="footer-links">
+            <a href="/history">📜 Lịch sử</a>
+        </div>
+    </div>
+
+    <script>
+        let cityData = []; // Mảng lưu thông tin thành phố
+
+        // Gọi API đọc file JSON chứa danh sách thành phố
+        fetch("/static/city.list.json")
+        .then(res => res.json())
+        .then(data => {
+            // Map dữ liệu thành phố thành dạng {label, value}
+            cityData = data.map(city => ({
+                label: `${city.name}, ${city.country}`, // Ví dụ: Hanoi, VN
+                value: city.id // Mã id tương ứng
+            }));
+
+            // Khởi tạo Awesomplete (gợi ý)
+            new Awesomplete(document.getElementById("searchBox"), {
+                list: cityData.map(c => c.label), // Danh sách tên thành phố
+                minChars: 1, // Bắt đầu gợi ý sau 1 ký tự
+                autoFirst: true // Tự chọn mục đầu tiên
+            });
+
+            // Khi người dùng chọn một mục gợi ý
+            document.getElementById("searchBox").addEventListener("awesomplete-selectcomplete", function(e) {
+                let selected = cityData.find(c => c.label === e.text.value); // Tìm thành phố được chọn
+                if (selected)
+                    document.getElementById("city_id").value = selected.value; // Gán city_id vào input ẩn
+            });
+        });
+
+        // Hàm được gọi khi submit form
+        function setCityId() {
+            let input = document.getElementById("searchBox").value;
+            let selected = cityData.find(c => c.label === input); // Kiểm tra có chọn đúng gợi ý không
+            if (!selected) {
+                alert("Vui lòng chọn thành phố từ gợi ý."); 
+                return false; 
+            }
+            document.getElementById("city_id").value = selected.value; // Gán city_id đúng
+            return true; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,915 @@
+[
+    {
+        "An Giang": {
+          "dia_diem": [
+            "Núi Sam – Miếu Bà Chúa Xứ",
+            "Rừng tràm Trà Sư",
+            "Chùa Hang"
+          ],
+          "mon_an": [
+            "Bún cá Long Xuyên",
+            "Gỏi sầu đâu",
+            "Cá lóc nướng trui",
+            "Xôi phồng",
+            "Mắm Châu Đốc"
+          ]
+        },
+        "Bà Rịa - Vũng Tàu": {
+          "dia_diem": [
+            "Bãi Sau",
+            "Ngọn hải đăng Vũng Tàu",
+            "Tượng Chúa Kitô Vua"
+          ],
+          "mon_an": [
+            "Bánh khọt",
+            "Lẩu cá đuối",
+            "Hàu nướng phô mai",
+            "Bún súng",
+            "Gỏi cá mai"
+          ]
+        },
+        "Bạc Liêu": {
+          "dia_diem": [
+            "Nhà Công tử Bạc Liêu",
+            "Quán âm Phật đài",
+            "Cánh đồng quạt gió"
+          ],
+          "mon_an": [
+            "Bánh củ cải",
+            "Bún bò cay",
+            "Lẩu mắm",
+            "Cháo lòng",
+            "Nem nướng"
+          ]
+        },
+        "Bắc Giang": {
+          "dia_diem": [
+            "Chùa Vĩnh Nghiêm",
+            "Tây Yên Tử",
+            "Suối Mỡ"
+          ],
+          "mon_an": [
+            "Mỳ Chũ",
+            "Vải thiều Lục Ngạn",
+            "Bánh đa Kế",
+            "Xôi trám",
+            "Gà đồi Yên Thế"
+          ]
+        }
+      },
+      {
+        "Bắc Kạn": {
+          "dia_diem": [
+            "Hồ Ba Bể",
+            "Động Hua Mạ",
+            "Vườn quốc gia Ba Bể"
+          ],
+          "mon_an": [
+            "Cá nướng Pác Ngòi",
+            "Xôi Đăm Đeng",
+            "Lạp xưởng hun khói",
+            "Măng vầu",
+            "Rượu ngô Bản Phủ"
+          ]
+        },
+        "Bến Tre": {
+          "dia_diem": [
+            "Cồn Phụng",
+            "Làng hoa Cái Mơn",
+            "Khu du lịch Lan Vương"
+          ],
+          "mon_an": [
+            "Kẹo dừa",
+            "Bánh xèo ốc gạo",
+            "Chả giò hến",
+            "Cá lóc nướng trui",
+            "Đuông dừa"
+          ]
+        },
+        "Bình Dương": {
+          "dia_diem": [
+            "Chùa Hội Khánh",
+            "Làng sơn mài Tương Bình Hiệp",
+            "Hồ Dầu Tiếng"
+          ],
+          "mon_an": [
+            "Bánh bèo bì",
+            "Gỏi gà măng cụt",
+            "Nem Lái Thiêu",
+            "Bò nướng ngói",
+            "Canh chua cá lóc"
+          ]
+        },
+        "Bình Định": {
+          "dia_diem": [
+            "Tháp Đôi",
+            "Ghềnh Ráng – Tiên Sa",
+            "Kỳ Co – Eo Gió"
+          ],
+          "mon_an": [
+            "Bánh xèo tôm nhảy",
+            "Bún chả cá Quy Nhơn",
+            "Bánh hỏi lòng heo",
+            "Nem chợ Huyện",
+            "Rượu Bàu Đá"
+          ]
+        }
+      },
+      {
+        "Bình Phước": {
+          "dia_diem": [
+            "Vườn quốc gia Bù Gia Mập",
+            "Hồ Suối Lam",
+            "Thác Đắk Mai"
+          ],
+          "mon_an": [
+            "Hạt điều rang muối",
+            "Gà nướng Bù Đăng",
+            "Heo quay bánh hỏi",
+            "Canh thụt",
+            "Cơm lam"
+          ]
+        },
+        "Bình Thuận": {
+          "dia_diem": [
+            "Mũi Né",
+            "Đồi cát bay",
+            "Tháp Chăm Pôshanư"
+          ],
+          "mon_an": [
+            "Bánh căn Phan Thiết",
+            "Bánh tráng cuốn dẻo",
+            "Răng mực nướng",
+            "Gỏi cá mai",
+            "Nước mắm Phan Thiết"
+          ]
+        },
+        "Cà Mau": {
+          "dia_diem": [
+            "Đất Mũi Cà Mau",
+            "Hòn Đá Bạc",
+            "Rừng U Minh Hạ"
+          ],
+          "mon_an": [
+            "Lẩu mắm U Minh",
+            "Ba khía muối",
+            "Cá thòi lòi nướng",
+            "Vọp nấu chua",
+            "Bánh tầm cay"
+          ]
+        }
+      },
+      {
+        "Cần Thơ": {
+          "dia_diem": [
+            "Chợ nổi Cái Răng",
+            "Bến Ninh Kiều",
+            "Vườn cò Bằng Lăng"
+          ],
+          "mon_an": [
+            "Lẩu mắm Cần Thơ",
+            "Bánh tét lá cẩm",
+            "Nem nướng Cái Răng",
+            "Ốc nướng tiêu",
+            "Chè bắp"
+          ]
+        },
+        "Cao Bằng": {
+          "dia_diem": [
+            "Thác Bản Giốc",
+            "Động Ngườm Ngao",
+            "Khu di tích Pác Bó"
+          ],
+          "mon_an": [
+            "Hạt dẻ Trùng Khánh",
+            "Bánh áp chao",
+            "Lạp xưởng hun khói",
+            "Phở chua Cao Bằng",
+            "Bánh trứng kiến"
+          ]
+        },
+        "Đà Nẵng": {
+          "dia_diem": [
+            "Bà Nà Hills",
+            "Cầu Rồng",
+            "Ngũ Hành Sơn"
+          ],
+          "mon_an": [
+            "Mì Quảng",
+            "Bánh tráng cuốn thịt heo",
+            "Bún chả cá",
+            "Gỏi cá Nam Ô",
+            "Chè sầu riêng"
+          ]
+        },
+        "Đắk Lắk": {
+          "dia_diem": [
+            "Buôn Đôn",
+            "Hồ Lắk",
+            "Thác Dray Nur"
+          ],
+          "mon_an": [
+            "Cơm lam",
+            "Gà nướng Bản Đôn",
+            "Cà đắng nấu cá khô",
+            "Canh bồi",
+            "Bún đỏ Buôn Ma Thuột"
+          ]
+        },
+        "Đắk Nông": {
+          "dia_diem": [
+            "Thác Gia Long",
+            "Hồ Ea Snô",
+            "Hang động Chư Bluk"
+          ],
+          "mon_an": [
+            "Cá suối nướng",
+            "Xôi măng",
+            "Canh thụt",
+            "Cơm lam gà nướng",
+            "Bánh canh cá lóc"
+          ]
+        },
+        "Điện Biên": {
+          "dia_diem": [
+            "Chiến trường Điện Biên Phủ",
+            "Tượng đài chiến thắng",
+            "Hồ Pá Khoang"
+          ],
+          "mon_an": [
+            "Xôi nếp nương",
+            "Thịt trâu gác bếp",
+            "Pa pỉnh tộp",
+            "Canh bon",
+            "Măng đắng"
+          ]
+        },
+        "Đồng Nai": {
+          "dia_diem": [
+            "Khu du lịch Bửu Long",
+            "Thác Giang Điền",
+            "Vườn quốc gia Cát Tiên"
+          ],
+          "mon_an": [
+            "Gỏi cá Biên Hòa",
+            "Lẩu cá lăng",
+            "Bánh hỏi heo quay",
+            "Cháo cá lóc",
+            "Gà hấp bưởi"
+          ]
+        }
+      }, 
+      {
+        "Đồng Tháp": {
+          "dia_diem": [
+            "Làng hoa Sa Đéc",
+            "Tràm Chim Tam Nông",
+            "Khu di tích Xẻo Quýt"
+          ],
+          "mon_an": [
+            "Hủ tiếu Sa Đéc",
+            "Cá linh bông điên điển",
+            "Nem Lai Vung",
+            "Bánh xèo Cao Lãnh",
+            "Chè bưởi"
+          ]
+        },
+        "Gia Lai": {
+          "dia_diem": [
+            "Biển Hồ Pleiku",
+            "Thác Phú Cường",
+            "Núi lửa Chư Đăng Ya"
+          ],
+          "mon_an": [
+            "Phở khô Gia Lai",
+            "Bò một nắng",
+            "Gà nướng cơm lam",
+            "Muối kiến vàng",
+            "Bánh canh cua rừng"
+          ]
+        },
+        "Hà Giang": {
+          "dia_diem": [
+            "Cao nguyên đá Đồng Văn",
+            "Cột cờ Lũng Cú",
+            "Đèo Mã Pí Lèng"
+          ],
+          "mon_an": [
+            "Thắng cố",
+            "Phở chua",
+            "Bánh tam giác mạch",
+            "Thịt trâu gác bếp",
+            "Cháo ấu tẩu"
+          ]
+        }
+      },
+      {
+        "Hà Nam": {
+          "dia_diem": [
+            "Chùa Tam Chúc",
+            "Động Tam Giao",
+            "Núi Ngọc"
+          ],
+          "mon_an": [
+            "Bánh cuốn Phủ Lý",
+            "Cá kho làng Vũ Đại",
+            "Cháo lòng",
+            "Canh cá rô đồng",
+            "Nem chua"
+          ]
+        },
+        "Hà Nội": {
+          "dia_diem": [
+            "Hồ Gươm",
+            "Văn Miếu - Quốc Tử Giám",
+            "Lăng Chủ tịch Hồ Chí Minh"
+          ],
+          "mon_an": [
+            "Phở Hà Nội",
+            "Bún chả",
+            "Chả cá Lã Vọng",
+            "Bánh cuốn Thanh Trì",
+            "Kem Tràng Tiền"
+          ]
+        },
+        "Hà Tĩnh": {
+          "dia_diem": [
+            "Biển Thiên Cầm",
+            "Chùa Hương Tích",
+            "Ngã ba Đồng Lộc"
+          ],
+          "mon_an": [
+            "Ram bánh mướt",
+            "Bánh đa xúc hến",
+            "Bánh bèo",
+            "Cháo lươn",
+            "Kẹo cu đơ"
+          ]
+        },
+        "Hải Dương": {
+          "dia_diem": [
+            "Côn Sơn – Kiếp Bạc",
+            "Đảo cò Chi Lăng Nam",
+            "Chùa Thanh Mai"
+          ],
+          "mon_an": [
+            "Bánh đậu xanh",
+            "Bánh gai",
+            "Bánh lòng Kinh Môn",
+            "Bánh đúc đậu",
+            "Bún cá rô đồng"
+          ]
+        },
+        "Hải Phòng": {
+          "dia_diem": [
+            "Đồ Sơn",
+            "Cát Bà",
+            "Cầu Bính"
+          ],
+          "mon_an": [
+            "Bánh đa cua",
+            "Nem cua bể",
+            "Bún tôm",
+            "Lẩu cua đồng",
+            "Giá bể xào"
+          ]
+        }
+      },
+      {
+        "Hậu Giang": {
+          "dia_diem": [
+            "Khu du lịch Lung Ngọc Hoàng",
+            "Chợ nổi Ngã Bảy",
+            "Di tích chiến thắng Tầm Vu"
+          ],
+          "mon_an": [
+            "Bánh xèo Cần Thơ – Hậu Giang",
+            "Lẩu mắm",
+            "Cháo lòng",
+            "Bún cá lóc",
+            "Canh chua bông điên điển"
+          ]
+        },
+        "Hòa Bình": {
+          "dia_diem": [
+            "Mai Châu",
+            "Thung Nai",
+            "Nhà máy thủy điện Hòa Bình"
+          ],
+          "mon_an": [
+            "Cơm lam",
+            "Thịt lợn mán",
+            "Rượu cần",
+            "Xôi nếp nương",
+            "Chả cuốn lá bưởi"
+          ]
+        },
+        "Hưng Yên": {
+          "dia_diem": [
+            "Phố Hiến",
+            "Chùa Chuông",
+            "Đền Mẫu"
+          ],
+          "mon_an": [
+            "Nhãn lồng Hưng Yên",
+            "Bún thang lươn",
+            "Tương Bần",
+            "Chả gà Tiểu Quan",
+            "Bánh răng bừa"
+          ]
+        },
+        "Khánh Hòa": {
+          "dia_diem": [
+            "VinWonders Nha Trang",
+            "Tháp Bà Ponagar",
+            "Đảo Điệp Sơn"
+          ],
+          "mon_an": [
+            "Bún cá sứa",
+            "Nem nướng Nha Trang",
+            "Bánh căn",
+            "Bánh ướt Diên Khánh",
+            "Chả cá Nha Trang"
+          ]
+        }
+      }, 
+      {
+        "Kiên Giang": {
+          "dia_diem": [
+            "Phú Quốc",
+            "Hà Tiên",
+            "Rừng tràm U Minh Thượng"
+          ],
+          "mon_an": [
+            "Gỏi cá trích Phú Quốc",
+            "Bún quậy",
+            "Bánh canh ghẹ",
+            "Nhum biển nướng mỡ hành",
+            "Còi biên mai nướng"
+          ]
+        },
+        "Kon Tum": {
+          "dia_diem": [
+            "Nhà thờ gỗ Kon Tum",
+            "Kon Kơ Riêng",
+            "Cầu treo Kon Klor"
+          ],
+          "mon_an": [
+            "Cơm lam Kon Tum",
+            "Gà nướng",
+            "Gỏi lá",
+            "Rượu cần",
+            "Xôi măng"
+          ]
+        },
+        "Lai Châu": {
+          "dia_diem": [
+            "Đèo Ô Quy Hồ",
+            "Bạch Mộc Lương Tử",
+            "Pu Ta Leng"
+          ],
+          "mon_an": [
+            "Lợn cắp nách",
+            "Cá bống vùi tro",
+            "Thịt trâu sấy",
+            "Rêu đá nướng",
+            "Măng nộm"
+          ]
+        },
+        "Lâm Đồng": {
+          "dia_diem": [
+            "Thung lũng Tình Yêu",
+            "Hồ Xuân Hương",
+            "Đồi chè Cầu Đất"
+          ],
+          "mon_an": [
+            "Bánh căn Đà Lạt",
+            "Lẩu gà lá é",
+            "Nem nướng",
+            "Bánh tráng nướng",
+            "Dâu tây Đà Lạt"
+          ]
+        },
+        "Lạng Sơn": {
+          "dia_diem": [
+            "Mẫu Sơn",
+            "Núi Tam Thanh – Nhị Thanh",
+            "Cửa khẩu Hữu Nghị"
+          ],
+          "mon_an": [
+            "Vịt quay Lạng Sơn",
+            "Lạp xưởng",
+            "Phở chua",
+            "Khâu nhục",
+            "Bánh áp chao"
+          ]
+        },
+        "Lào Cai": {
+          "dia_diem": [
+            "Sa Pa",
+            "Đỉnh Fansipan",
+            "Bản Cát Cát"
+          ],
+          "mon_an": [
+            "Thắng cố",
+            "Cá hồi Sa Pa",
+            "Lẩu cá tầm",
+            "Mèn mén",
+            "Cơm lam"
+          ]
+        }
+      },
+      {
+        "Long An": {
+          "dia_diem": [
+            "Khu di tích Lịch sử Cần Giuộc",
+            "Làng nổi Tân Lập",
+            "Chùa Vạn Đức"
+          ],
+          "mon_an": [
+            "Bánh tét Long An",
+            "Lẩu mắm",
+            "Bánh xèo",
+            "Cá kho tộ",
+            "Bánh bột lọc"
+          ]
+        },
+        "Nam Định": {
+          "dia_diem": [
+            "Vườn quốc gia Xuân Thủy ",
+            "Chùa Phổ Minh",
+            "Đền Trần"
+          ],
+          "mon_an": [
+            "Bánh gai",
+            "Phở Nam Định",
+            "Bánh cuốn",
+            "Chả mực",
+            "Bún chả Nam Định"
+          ]
+        },
+        "Nghệ An": {
+          "dia_diem": [
+            "Quê Bác Hồ",
+            "Đền Cuông",
+            "Bãi biển Cửa Lò"
+          ],
+          "mon_an": [
+            "Cháo lươn",
+            "Cá kho Nghệ An",
+            "Bánh mướt",
+            "Bánh đa mắm",
+            "Sữa đậu nành"
+          ]
+        }
+      },             
+      {
+        "Ninh Bình": {
+          "dia_diem": [
+            "Tràng An",
+            "Chùa Bái Đính",
+            "Cố đô Hoa Lư"
+          ],
+          "mon_an": [
+            "Cơm cháy Ninh Bình",
+            "Bún mọc",
+            "Dê núi",
+            "Rượu cần Ninh Bình",
+            "Bánh mì chả cá"
+          ]
+        },
+        "Phú Thọ": {
+          "dia_diem": [
+            "Đền Hùng",
+            "Khu di tích lịch sử Đền Hùng",
+            "Vườn quốc gia Xuân Sơn"
+          ],
+          "mon_an": [
+            "Bánh chưng",
+            "Bánh tét",
+            "Thịt chua",
+            "Rượu cần",
+            "Lợn mán"
+          ]
+        },
+        "Phú Yên": {
+          "dia_diem": [
+            "Mũi Điện",
+            "Bãi Xép",
+            "Vịnh Vũng Rô"
+          ],
+          "mon_an": [
+            "Bánh hỏi lòng heo",
+            "Mực một nắng",
+            "Cá ngừ đại dương",
+            "Chả dông",
+            "Gỏi cá"
+          ]
+        }
+      },{
+        "Quảng Bình": {
+          "dia_diem": [
+            "Hang Sơn Đoòng",
+            "Động Phong Nha",
+            "Bãi biển Nhật Lệ"
+          ],
+          "mon_an": [
+            "Bánh xèo Quảng Bình",
+            "Chả cá Quảng Bình",
+            "Bánh canh ruốc",
+            "Cá kho tộ",
+            "Bánh bột lọc"
+          ]
+        },
+        "Quảng Nam": {
+          "dia_diem": [
+            "Phố cổ Hội An",
+            "Thánh địa Mỹ Sơn",
+            "Cù Lao Chàm"
+          ],
+          "mon_an": [
+            "Cao lầu",
+            "Mì Quảng",
+            "Bánh xèo Quảng Nam",
+            "Cơm gà Hội An",
+            "Bánh bao bánh vạc"
+          ]
+        },
+        "Quảng Ngãi": {
+          "dia_diem": [
+            "Khu tưởng niệm chiến sĩ Gạc Ma",
+            "Bãi biển Mỹ Khê",
+            "Đảo Lý Sơn"
+          ],
+          "mon_an": [
+            "Gỏi cá mai",
+            "Bánh hỏi lòng heo",
+            "Sò điệp nướng",
+            "Cá bống sông Trà",
+            "Chả cá Lý Sơn"
+          ]
+        }
+      },
+      {
+        "Quảng Ninh": {
+          "dia_diem": [
+            "Vịnh Hạ Long",
+            "Công viên Yên Tử",
+            "Đảo Cô Tô"
+          ],
+          "mon_an": [
+            "Chả mực Hạ Long",
+            "Bánh gật gù",
+            "Ngán hấp",
+            "Sá sùng",
+            "Cá thu"
+          ]
+        },
+        "Sơn La": {
+          "dia_diem": [
+            "Mộc Châu",
+            "Thác Dải Yếm",
+            "Bản Áng"
+          ],
+          "mon_an": [
+            "Bánh đuông",
+            "Thịt trâu gác bếp",
+            "Mận Mộc Châu",
+            "Xôi nếp nương",
+            "Rượu ngô"
+          ]
+        },
+        "Tây Ninh": {
+          "dia_diem": [
+            "Núi Bà Đen",
+            "Cao đài Tây Ninh",
+            "Khu du lịch Long Điền Sơn"
+          ],
+          "mon_an": [
+            "Bánh tráng Tây Ninh",
+            "Lẩu thả",
+            "Gỏi cuốn",
+            "Mắm chua",
+            "Cơm gà"
+          ]
+        },
+        "Thái Bình": {
+          "dia_diem": [
+            "Chùa Keo",
+            "Biển Đồng Châu",
+            "Đầm Thị Nại"
+          ],
+          "mon_an": [
+            "Bánh cáy",
+            "Bánh đa cua",
+            "Mực nướng",
+            "Chả mực",
+            "Bánh hỏi"
+          ]
+        },
+        "Thái Nguyên": {
+          "dia_diem": [
+            "Chùa Hang",
+            "Công viên Hồ Núi Cốc",
+            "Đền thờ Phú Lương"
+          ],
+          "mon_an": [
+            "Bánh chưng",
+            "Cơm gà",
+            "Lẩu cá",
+            "Món canh thập cẩm",
+            "Chè Thái Nguyên"
+          ]
+        }
+      },
+      {
+        "Yên Bái": {
+          "dia_diem": [
+            "Mù Cang Chải",
+            "Ruộng bậc thang Mù Cang Chải",
+            "Khu bảo tồn thiên nhiên Xuân Long"
+          ],
+          "mon_an": [
+            "Cơm lam Yên Bái",
+            "Gà đồi Mù Cang Chải",
+            "Lợn mán",
+            "Bánh cuốn",
+            "Rượu cần"
+          ]
+        }
+      },
+      {
+        "Ninh Thuận": {
+          "dia_diem": [
+            "Tháp Po Klong Garai",
+            "Hang Rái",
+            "Vịnh Vĩnh Hy"
+          ],
+          "mon_an": [
+            "Thịt cừu nướng",
+            "Nho Ninh Thuận",
+            "Bánh căn",
+            "Chả cuốn",
+            "Gỏi cá mai"
+          ]
+        },
+        "Quảng Trị": {
+          "dia_diem": [
+            "Thành cổ Quảng Trị",
+            "Cầu Hiền Lương",
+            "Địa đạo Vịnh Mốc"
+          ],
+          "mon_an": [
+            "Bún hến",
+            "Cháo bột cá lóc",
+            "Bánh ướt Phương Lang",
+            "Bánh khoái",
+            "Gỏi cá"
+          ]
+        },
+        "Thừa Thiên Huế": {
+          "dia_diem": [
+            "Kinh thành Huế",
+            "Chùa Thiên Mụ",
+            "Lăng Tự Đức"
+          ],
+          "mon_an": [
+            "Bún bò Huế",
+            "Cơm hến",
+            "Bánh bèo",
+            "Bánh khoái",
+            "Chè Huế"
+          ]
+        },
+        "Tuyên Quang": {
+          "dia_diem": [
+            "Na Hang",
+            "Suối khoáng Mỹ Lâm",
+            "Tân Trào"
+          ],
+          "mon_an": [
+            "Thịt lợn đen",
+            "Vịt Minh Hương",
+            "Xôi ngũ sắc",
+            "Măng rừng",
+            "Canh chua cá lăng"
+          ]
+        },
+        "Trà Vinh": {
+          "dia_diem": [
+            "Ao Bà Om",
+            "Chùa Âng",
+            "Cù lao Long Trị"
+          ],
+          "mon_an": [
+            "Bánh tét Trà Cuôn",
+            "Bún nước lèo",
+            "Chù ụ rang me",
+            "Canh chua cá linh",
+            "Bánh cống"
+          ]
+        },
+        "Sóc Trăng": {
+          "dia_diem": [
+            "Chùa Dơi",
+            "Chùa Đất Sét",
+            "Chợ nổi Ngã Năm"
+          ],
+          "mon_an": [
+            "Bún nước lèo",
+            "Bánh pía",
+            "Bánh cóng",
+            "Lẩu mắm",
+            "Nem nướng"
+          ]
+        },
+        "Vĩnh Long": {
+          "dia_diem": [
+            "Văn Thánh Miếu",
+            "Cù lao An Bình",
+            "Chợ nổi Trà Ôn"
+          ],
+          "mon_an": [
+            "Chả lụa",
+            "Canh chua cá lóc",
+            "Bánh xèo",
+            "Cá tai tượng chiên xù",
+            "Trái cây miệt vườn"
+          ]
+        },
+        "Bắc Ninh": {
+          "dia_diem": [
+            "Đền Đô",
+            "Làng tranh Đông Hồ",
+            "Chùa Dâu"
+          ],
+          "mon_an": [
+            "Nem Bùi",
+            "Bánh khúc làng Diềm",
+            "Bánh tẻ",
+            "Gà Hồ",
+            "Canh cá Quế Võ"
+          ]
+        },
+        "Thanh Hóa": {
+          "dia_diem": [
+            "Biển Sầm Sơn",
+            "Thành nhà Hồ",
+            "Suối cá Cẩm Lương"
+          ],
+          "mon_an": [
+            "Nem chua Thanh Hóa",
+            "Cháo canh",
+            "Bánh gai Tứ Trụ",
+            "Gỏi cá nhệch",
+            "Ốc mút"
+          ]
+        },
+        "TP Hồ Chí Minh": {
+          "dia_diem": [
+            "Chợ Bến Thành",
+            "Dinh Độc Lập",
+            "Nhà thờ Đức Bà"
+          ],
+          "mon_an": [
+            "Cơm tấm",
+            "Hủ tiếu",
+            "Bánh mì",
+            "Phá lấu",
+            "Súp cua"
+          ]
+        }
+      },
+      {
+        "Vĩnh Phúc": {
+          "dia_diem": [
+            "Tam Đảo",
+            "Tây Thiên",
+            "Hồ Đại Lải"
+          ],
+          "mon_an": [
+            "Su su Tam Đảo",
+            "Gà đồi",
+            "Bò tái kiến đốt",
+            "Chè kho",
+            "Rau sắng"
+          ]
+        }
+      },      
+      {
+        "Tiền Giang": {
+          "dia_diem": [
+            "Cù lao Thới Sơn",
+            "Chợ nổi Cái Bè",
+            "Trại rắn Đồng Tâm"
+          ],
+          "mon_an": [
+            "Hủ tiếu Mỹ Tho",
+            "Cháo cá lóc",
+            "Bánh vá",
+            "Bánh ít",
+            "Lẩu mắm"
+          ]
+        }
+      }                       
+]

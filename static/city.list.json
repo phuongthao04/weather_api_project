@@ -1,0 +1,832 @@
+[
+    {
+        "id": 1581188,
+        "name": "Thành phố Cần Thơ",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.666672, 
+            "lat": 9.83333
+        }
+    },
+    {
+        "id": 1905468,
+        "name": "Thành phố Ðà Nẵng",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 108.083328,
+            "lat": 16.08333
+        }
+    },
+    {
+        "id": 1581297,
+        "name": "Thành Phố Hải Phòng",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.583328,
+            "lat": 20.83333
+        }
+    },
+    {
+        "id": 1581129,
+        "name": "Thủ Ðô Hà Nội",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.883331,
+            "lat": 21.116671
+        }
+    },
+    {
+        "id": 1580578,
+        "name": "Thành phố Hồ Chí Minh",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.666672,
+            "lat": 10.83333
+        }
+    },
+    {
+        "id": 1594446,
+        "name": "Tỉnh An Giang",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.166672,
+            "lat": 10.5
+        }
+    },
+    {
+        "id": 1584534,
+        "name": "Tỉnh Bà Rịa-Vũng Tàu",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 107.25,
+            "lat": 10.58333
+        }
+    },
+    {
+        "id": 1905675,
+        "name": "Tỉnh Bạc Liêu",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.75,
+            "lat": 9.25
+        }
+    },
+    {
+        "id": 1905419,
+        "name": "Tỉnh Bắc Giang",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.333328,
+            "lat": 21.33333
+        }
+    },
+    {
+        "id": 1905669,
+        "name": "Tỉnh Bắc Kạn",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.833328,
+            "lat": 22.16667
+        }
+    },
+    {
+        "id": 1905412,
+        "name": "Tỉnh Bắc Ninh",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.166672,
+            "lat": 21.08333
+        }
+    },
+    {
+        "id": 1587974,
+        "name": "Tỉnh Bến Tre",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.5,
+            "lat": 10.16667
+        }
+    }, 
+    {
+        "id": 1587871,
+        "name": "Tỉnh Bình Ðịnh",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 109.0,
+            "lat": 14.16667
+        }
+    },
+    {
+        "id": 1905475,
+        "name": "Tỉnh Bình Dương",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.666672,
+            "lat": 11.16667
+        }
+    },
+    {
+        "id": 1905480,
+        "name": "Tỉnh Bình Phước",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.916672,
+            "lat": 11.75
+        }
+    },
+    {
+        "id": 1581882,
+        "name": "Tỉnh Bình Thuận",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 108.0,
+            "lat": 11.08333
+        }
+    },
+    {
+        "id": 1905678,
+        "name": "Tỉnh Cà Mau",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.083328,
+            "lat": 9.08333
+        }
+    },
+    {
+        "id": 1586182,
+        "name": "Tỉnh Cao Bằng",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.0,
+            "lat": 22.66667
+        }
+    },
+    {
+        "id": 1584169,
+        "name": "Tỉnh Ðắc Lắk",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 108.166672,
+            "lat": 12.83333
+        }
+    },
+    {
+        "id": 1905099,
+        "name": "Tỉnh Ðiện Biên",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 102.933327,
+            "lat": 21.33333
+        }
+    },
+    {
+        "id": 1582720,
+        "name": "Tỉnh Ðồng Nai",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 107.166672,
+            "lat": 11.0
+        }
+    },
+    {
+        "id": 1582562,
+        "name": "Tỉnh Ðồng Tháp",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.666672,
+            "lat": 10.66667
+        }
+    },
+    {
+        "id": 1581088,
+        "name": "Tỉnh Gia Lai",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 108.25,
+            "lat": 13.75
+        }
+    },
+    {
+        "id": 1581030,
+        "name": "Tỉnh Hà Giang",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.0,
+            "lat": 22.75
+        }
+    },
+    {
+        "id": 1905637,
+        "name": "Tỉnh Hà Nam",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.0,
+            "lat": 20.58333
+        }
+    },
+    {
+        "id": 1580700,
+        "name": "Tỉnh Hà Tĩnh",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.75,
+            "lat": 18.33333
+        }
+    },
+    {
+        "id": 1905686,
+        "name": "Tỉnh Hải Dương",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.333328,
+            "lat": 20.91667
+        }
+    },
+    {
+        "id": 1572594,
+        "name": "Tỉnh Hòa Bình",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.25,
+            "lat": 20.33333
+        }
+    },
+    {
+        "id": 1905699,
+        "name": "Tỉnh Hưng Yên",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.083328,
+            "lat": 20.83333
+        }
+    },
+    {
+        "id": 1579634,
+        "name": "Tỉnh Khánh Hòa",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 109.0,
+            "lat": 12.33333
+        }
+    },
+    {
+        "id": 1579008,
+        "name": "Tỉnh Kiên Giang",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.166672,
+            "lat": 10.0
+        }
+    },
+    {
+        "id": 1565088,
+        "name": "Tỉnh Kon Tum",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 107.916672,
+            "lat": 14.75
+        }
+    },
+    {
+        "id": 1577882,
+        "name": "Tỉnh Lâm Ðồng",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 108.333328,
+            "lat": 11.5
+        }
+    },
+    {
+        "id": 1576632,
+        "name": "Tỉnh Lạng Sơn",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.5,
+            "lat": 21.75
+        }
+    },
+    {
+        "id": 1562412,
+        "name": "Tỉnh Lào Cai",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 104.0,
+            "lat": 22.33333
+        }
+    },
+    {
+        "id": 1575788,
+        "name": "Tỉnh Long An",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.166672,
+            "lat": 10.66667
+        }
+    },
+    {
+        "id": 1905626,
+        "name": "Tỉnh Nam Ðịnh",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.25,
+            "lat": 20.25
+        }
+    },{
+        "id": 1559969,
+        "name": "Tỉnh Nghệ An",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 104.833328,
+            "lat": 19.33333
+        }
+    },
+    {
+        "id": 1559970,
+        "name": "Tỉnh Ninh Bình",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.833328,
+            "lat": 20.25
+        }
+    },
+    {
+        "id": 1559971,
+        "name": "Tỉnh Ninh Thuận",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 108.833328,
+            "lat": 11.75
+        }
+    },
+    {
+        "id": 1905577,
+        "name": "Tỉnh Phú Thọ",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.166672,
+            "lat": 21.33333
+        }
+    },
+    {
+        "id": 1569805,
+        "name": "Tỉnh Phú Yên",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 109.166672,
+            "lat": 13.16667
+        }
+    },
+    {
+        "id": 1568839,
+        "name": "Tỉnh Quảng Bình",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.333328,
+            "lat": 17.5
+        }
+    },
+    {
+        "id": 1905516,
+        "name": "Tỉnh Quảng Nam",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 107.916672,
+            "lat": 15.58333
+        }
+    },
+    {
+        "id": 1568769,
+        "name": "Tỉnh Quảng Ngãi",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 108.666672,
+            "lat": 15.0
+        }
+    },
+    {
+        "id": 1568758,
+        "name": "Tỉnh Quảng Ninh",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 107.333328,
+            "lat": 21.25
+        }
+    },
+    {
+        "id": 1568733,
+        "name": "Tỉnh Quảng Trị",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 107.0,
+            "lat": 16.75
+        }
+    },
+    {
+        "id": 1559972,
+        "name": "Tỉnh Sóc Trăng",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.833328,
+            "lat": 9.66667
+        }
+    },
+    {
+        "id": 1567643,
+        "name": "Tỉnh Sơn La",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 104.0,
+            "lat": 21.16667
+        }
+    },
+    {
+        "id": 1566557,
+        "name": "Tỉnh Tây Ninh",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.166672,
+            "lat": 11.33333
+        }
+    },
+    {
+        "id": 1566338,
+        "name": "Tỉnh Thái Bình",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.333328,
+            "lat": 20.5
+        }
+    },
+    {
+        "id": 1905497,
+        "name": "Tỉnh Thái Nguyên",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.833328,
+            "lat": 21.66667
+        }
+    },
+    {
+        "id": 1566165,
+        "name": "Tỉnh Thanh Hóa",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.5,
+            "lat": 20.0
+        }
+    },
+    {
+        "id": 1565033,
+        "name": "Tỉnh Thừa Thiên-Huế",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 107.583328,
+            "lat": 16.33333
+        }
+    },
+    {
+        "id": 1564676,
+        "name": "Tỉnh Tiền Giang",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.166672,
+            "lat": 10.41667
+        }
+    },
+    {
+        "id": 1559975,
+        "name": "Tỉnh Trà Vinh",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.25,
+            "lat": 9.83333
+        }
+    },
+    {
+        "id": 1559976,
+        "name": "Tỉnh Tuyên Quang",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.25,
+            "lat": 22.116671
+        }
+    },
+    {
+        "id": 1559977,
+        "name": "Tỉnh Vĩnh Long",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.0,
+            "lat": 10.16667
+        }
+    },
+    {
+        "id": 1905856,
+        "name": "Tỉnh Vĩnh Phúc",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.599998,
+            "lat": 21.299999
+        }
+    },
+    {
+        "id": 1559978,
+        "name": "Tỉnh Yên Bái",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 104.666672,
+            "lat": 21.5
+        }
+    },
+    {
+        "id": 1562798,
+        "name": "TP Vinh, Tỉnh Nghệ An",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.666672,
+            "lat": 18.66667
+        }
+    },
+    {
+        "id": 1562820,
+        "name": "TP Việt Trì, Tỉnh Phú Thọ",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.430832,
+            "lat": 21.301941
+        }
+    },
+    {
+        "id": 1563241,
+        "name": "TP Uông Bí, Tỉnh Quảng Ninh",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.783333,
+            "lat": 21.033331
+        }
+    },
+    {
+        "id": 1565022,
+        "name": "TP Thủ Dầu Một",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.650002,
+            "lat": 10.96667
+        }
+    },
+    {
+        "id": 1568043,
+        "name": "Sa Pa, Lào Cai",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 103.844147,
+            "lat": 22.340231
+        }
+    },
+    {
+        "id": 1568212,
+        "name": "TP Sa Đéc, Tỉnh Đồng Tháp",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.76667,
+            "lat": 10.3
+        }
+    },
+    {
+        "id": 1568574,
+        "name": "TP Quy Nhơn, Tỉnh Bình Định",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 109.23333,
+            "lat": 13.76667
+        }
+    },
+    {
+        "id": 1569684,
+        "name": "TP Pleiku, Tỉnh Gia Lai",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 108.0,
+            "lat": 13.98333
+        }
+    },
+    {
+        "id": 1570449,
+        "name": "TP Phủ Lý, Tỉnh Hà Nam",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.913887,
+            "lat": 20.541109
+        }
+    },
+    {
+        "id": 1571058,
+        "name": "TP Phan Thiết, Tỉnh Bình Thuận",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 108.099998,
+            "lat": 10.93333
+        }
+    },
+    
+    {
+        "id": 1571067,
+        "name": "TP Phan Rang-Tháp Chàm, Tỉnh Ninh Thuận",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 108.98333,
+            "lat": 11.56667
+        }
+    },
+    {
+        "id": 1572151,
+        "name": "TP Nha Trang, Tỉnh Khánh Hòa",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 109.183327,
+            "lat": 12.25
+        }
+    },
+    {
+        "id": 1573517,
+        "name": "TP Nam Định, Tỉnh Nam Định",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.166672,
+            "lat": 20.41667
+        }
+    },
+    {
+        "id": 8201616,
+        "name": "Huyện Ba Vì, TP Hà Nội",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.430183,
+            "lat": 21.1999
+        }
+    },
+    {
+        "id": 1567621,
+        "name": "Sơn tây",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.504997,
+            "lat": 21.137779
+        }
+    },
+    {
+        "id": 1568510,
+        "name": "TP Rạch Giá, Tỉnh Kiên Giang",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.083328,
+            "lat": 10.01667
+        }
+    },
+    {
+        "id": 1574023,
+        "name": "TP Mỹ Tho, Tỉnh Tiền GiangGiang",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.349998,
+            "lat": 10.35
+        }
+    },
+   
+    {
+        "id": 1575627,
+        "name": "TP Long Xuyên, Tỉnh An Giang",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.416672,
+            "lat": 10.38333
+        }
+    },
+    {
+        "id": 1580240,
+        "name": "TP Huế, Tỉnh Thừa Thiên Huế",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 107.599998,
+            "lat": 16.466669
+        }
+    },
+    {
+        "id": 1580410,
+        "name": "TP Hạ Long, Tỉnh Quảng Ninh",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 107.080002,
+            "lat": 20.951111
+        }
+    },
+    {
+        "id": 1580541,
+        "name": "TP Hội An, Tỉnh Quảng Nam",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 108.334999,
+            "lat": 15.87944
+        }
+    },
+    
+    {
+        "id": 1582436,
+        "name": "TP Đồng Xoài, Tỉnh Bình Phước",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.916672,
+            "lat": 11.53333
+        }
+    },
+    {
+        "id": 1582886,
+        "name": "TP Đồng Hới, Tỉnh Quảng Bình",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.599998,
+            "lat": 17.48333
+        }
+    },
+    {
+        "id": 1583477,
+        "name": "TP Điện Biên Phủ, Tỉnh Điện Biên",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 103.01667,
+            "lat": 21.383329
+        }
+    },
+    {
+        "id": 1584071,
+        "name": "TP Đà Lạt, Tỉnh Lâm Đồng",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 108.441933,
+            "lat": 11.94646
+        }
+    },
+    {
+        "id": 1584661,
+        "name": "Huyện Củ Chi, TP Hồ Chí Minh",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.466667,
+            "lat": 10.96667
+        }
+    },
+    {
+        "id": 1585660,
+        "name": "TP Châu Đốc, Tỉnh An Giang",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.116669,
+            "lat": 10.7
+        }
+    },
+    {
+        "id": 1586288,
+        "name": "Huyện Cần Giờ, TP Hồ Chí Minh",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.966667,
+            "lat": 10.41667
+        }
+    },
+    {
+        "id": 1586357,
+        "name": "TP Cẩm Phả, Tỉnh Quảng Ninh",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 107.300003,
+            "lat": 21.01667
+        }
+    },
+    {
+        "id": 1586896,
+        "name": "TP Buôn Ma Thuột, Tỉnh Đắc Lắk",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 108.050003,
+            "lat": 12.66667
+        }
+    },
+    {
+        "id": 1587919,
+        "name": "Thị xã Bỉm Sơn, Thanh Hóa",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 105.860283,
+            "lat": 20.07806
+        }
+    },
+    {
+        "id": 1587923,
+        "name": "TP Biên Hòa, Tỉnh Đồng Nai",
+        "country": "Việt Nam",
+        "coord": {
+            "lon": 106.816673,
+            "lat": 10.95
+        }
+    }
+]
